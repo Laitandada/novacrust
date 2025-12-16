@@ -29,14 +29,14 @@ function Wallet({ value, onChange, wallets }: WalletProps) {
 
      
 
-      <SelectContent className="border max-w-[310px]  md:max-w-[464px] left-3 md:left-6 top-[-15px] md:top-[-20px] rounded-[20px] mx-auto px-3 py-4">
+      <SelectContent className="border max-w-[310px] w-full  md:max-w-[464px] left-3 md:left-6 top-[-15px] md:top-[-20px] rounded-[20px] px-3 py-4">
         {" "}
         {wallets.map((wallet) => (
           <SelectItem
             key={wallet.value}
             value={wallet.value}
             className={cn(
-              "flex justify-between items-center cursor-pointer gap-2 p-3 hover:bg-gray-100 text-primary font-Outfit font-medium rounded-[12px]",
+              "flex w-[90%] right-3  justify-between items-center cursor-pointer gap-2 p-3  hover:bg-gray-100 text-primary font-Outfit font-medium rounded-[12px]",
               value === wallet.value ? "bg-[#f5f5f5]" : "bg-white"
             )}
           >
