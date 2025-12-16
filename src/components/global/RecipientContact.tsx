@@ -100,7 +100,7 @@ const RecipientContact = (props: Props) => {
 
           <Input
             placeholder="000-0000-00000"
-            className="w-full h-full bg-white border-0    font-Outfit text-primary text-base"
+            className="w-full h-full bg-white border-0 outline-0 focus:text-transparent   font-Outfit text-primary text-base"
             value={watch("recipientPhoneNumber")}
             {...register("recipientPhoneNumber")}
           />
@@ -115,7 +115,7 @@ const RecipientContact = (props: Props) => {
 
       <Button
         type="submit"
-        className="w-full h-[60px] mt-20 mb-10"
+        className="w-full h-[60px] mt-20 mb-14"
         disabled={isSubmitting}
       >
         {isSubmitting ? "Submitting..." : "Next"}

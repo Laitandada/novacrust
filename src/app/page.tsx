@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen bg-background flex-col items-center justify-center mx-auto w-full">
-      <div className="bg-white border rounded-md border-[#CCF6E5] w-[95%] mx-auto max-w-[640px] md:w-full flex flex-col items-center pt-10 px-4 md:px-[64px]">
+      <div className="bg-white border rounded-md border-[#CCF6E5] w-[95%] mx-auto max-w-[640px] md:w-full flex flex-col items-center pt-5 px-4 md:px-[64px]">
         {/* Tabs */}
         {step === "form" && (
           <div className="flex bg-background gap-1 rounded-md p-1 mb-4 md:mb-6">

@@ -26,7 +26,7 @@ const CashToCrypto = (props: Props) => {
           placeholder="Enter your email"
           className="w-full h-[60px] bg-white border  rounded-md font-Outfit text-primary text-base"
         />
-        <Button className="w-full h-[60px] mt-20 mb-[225px]  ">
+        <Button className="w-full h-[60px] mt-20 mb-[205px]  ">
           Update me
         </Button>
       </div>

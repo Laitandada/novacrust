@@ -122,7 +122,7 @@ const CryptoToCash = (props: Props) => {
       </div>
       <Button
         type="submit"
-        className="w-full h-[60px] mt-10 mb-10 md:mb-14  "
+        className="w-full h-[60px] mt-10 mb-10 md:mb-8  "
         disabled={
           // !watch("payFromWallet") ||
           // !watch("payToWallet") ||

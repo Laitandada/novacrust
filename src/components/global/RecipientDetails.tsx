@@ -96,7 +96,7 @@ const RecipientDetails = (props: Props) => {
           </p>
         )}
       </div>
-      <div className="flex flex-col w-full  gap-2 mt-6  mb-[120px] md:mb-[225px]  ">
+      <div className="flex flex-col w-full  gap-2 mt-6  mb-[120px] md:mb-[145px]  ">
         <div className="pb-4">
           <p className="font-Outfit text-base font-medium  text-primary ">
             Account Name

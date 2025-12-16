@@ -15,7 +15,7 @@ const Confirmation = (props: Props) => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex justify-center items-center pb-16 w-full">
+      <div className="flex justify-center items-center mt-4 pb-16 w-full">
         <Image
           src="/images/icons/logo.svg"
           alt="copy"
