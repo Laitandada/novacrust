@@ -31,13 +31,15 @@ export function ComboboxCoin() {
   const selectedCoin = coins.find((coin) => coin.value === value);
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
+    <Popover open={open} onOpenChange={setOpen} >
       <PopoverTrigger asChild>
-        <MotionButton
+            <div className=" w-[264px] flex justify-end">
+              <MotionButton
           layout
           variant="outline"
           role="combobox"
           aria-expanded={open}
+          type="button"
           className="
     h-[36px] rounded-[20px] px-3
     inline-flex items-center 
@@ -75,10 +77,12 @@ export function ComboboxCoin() {
           </motion.span>
 
           <ChevronDown className="h-5 w-5  shrink-0 text-primary" />
-        </MotionButton>
+        </MotionButton> 
+            </div>
+       
       </PopoverTrigger>
 
-      <PopoverContent className="w-[264px] h-[275px] rounded-[20px] border ">
+      <PopoverContent className="w-[264px] h-[275px] rounded-[20px] border  ">
         <Command>
           <CommandList>
             <CommandInput

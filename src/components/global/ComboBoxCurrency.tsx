@@ -34,10 +34,12 @@ export function ComboboxCurrency() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <MotionButton
+        <div className=" w-[264px] flex justify-end">
+           <MotionButton
           layout
           variant="outline"
           role="combobox"
+            type="button"
           aria-expanded={open}
           className="
             h-[36px] rounded-[20px] px-3
@@ -82,6 +84,8 @@ export function ComboboxCurrency() {
 
           <ChevronDown className="h-5 w-5 shrink-0 text-primary" />
         </MotionButton>
+        </div>
+       
       </PopoverTrigger>
 
       <PopoverContent className="w-[264px] h-[305px] rounded-[20px] border">

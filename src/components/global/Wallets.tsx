@@ -19,7 +19,7 @@ type WalletProps = {
 
 function Wallet({ value, onChange, wallets }: WalletProps) {
   return (
-    <Select value={value} onValueChange={onChange}>
+    <Select value={value} onValueChange={onChange} >
       <SelectTrigger className="w-full bg-white border border-gray-300 rounded-md">
         <SelectValue
           placeholder="Select an option"
@@ -27,7 +27,9 @@ function Wallet({ value, onChange, wallets }: WalletProps) {
         />
       </SelectTrigger>
 
-      <SelectContent className="border rounded-[20px] mx-auto px-3 py-4">
+     
+
+      <SelectContent className="border max-w-[310px]  md:max-w-[464px] left-3 md:left-6 top-[-15px] md:top-[-20px] rounded-[20px] mx-auto px-3 py-4">
         {" "}
         {wallets.map((wallet) => (
           <SelectItem
@@ -45,7 +47,7 @@ function Wallet({ value, onChange, wallets }: WalletProps) {
               <img
                 src={wallet.image}
                 alt={wallet.label}
-                className="w-6 h-6 rounded-full"
+                className="w-5 h-5 md:w-6 md:h-6 rounded-full"
               />
             )}{" "}
               {wallet.label}{" "}
